@@ -1,40 +1,29 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {
-  chakra,
-  UnorderedList,
-  List,
-  ListIcon,
-  ListItem,
   ChakraProvider,
   CSSReset,
   extendTheme,
   Box,
   Button,
   Text,
-  Link,
   Tabs,
   TabList,
   TabPanels,
   Tab,
   TabPanel,
   VStack,
-  Code,
   Grid,
   theme as chakraTheme,
   Heading,
-  Flex,
   Container,
   Icon
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Logo } from "./Logo";
 import GraphApp from "./GraphApp";
-import { MdCheckCircle } from "react-icons/md";
 import { CheckIcon } from '@chakra-ui/icons'
 import ArticleList from "./pagination";
-import Demo from "./al2";
-import ItemPage from "./ItemPage";
+
 
 const colors = {
   brand: {

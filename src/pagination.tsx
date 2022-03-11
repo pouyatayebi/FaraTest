@@ -17,7 +17,6 @@ import {
   Text,
   Button,
   ChakraProvider,
-  VStack,
 } from "@chakra-ui/react";
 import {
   Paginator,
@@ -198,13 +197,13 @@ const ArticleList: React.FC<ArticleListProps> = ({ PostsData }) => {
     }
 
     if (sort) {
-      const beforeSort:any[]=[...allArticlesData]
-      const sortedArticle= beforeSort.sort(
-            (a, b) =>
-              parseFloat(b["Publication Year"]) - parseFloat(a["Publication Year"])
+      const beforeSort: any[] = [...allArticlesData];
+      const sortedArticle = beforeSort.sort(
+        (a, b) =>
+          parseFloat(b["Publication Year"]) - parseFloat(a["Publication Year"])
       );
-      allArticlesData = [...sortedArticle]
-      console.log('sort', sort)
+      allArticlesData = [...sortedArticle];
+      console.log("sort", sort);
     }
 
     const articlesInPagination = allArticlesData.slice(
@@ -222,7 +221,7 @@ const ArticleList: React.FC<ArticleListProps> = ({ PostsData }) => {
     currentYear,
     currentType,
     currentPublisher,
-    sort
+    sort,
   ]);
 
   // styles
@@ -297,16 +296,15 @@ const ArticleList: React.FC<ArticleListProps> = ({ PostsData }) => {
   //   setArticleTotal(sortedArticlesInPage.length)
   // };
   const sortByDate = () => {
-    setSort(!sort)
-    
-  }
+    setSort(!sort);
+  };
   return (
     <ChakraProvider>
       <Flex justifyContent="space-between" mt={7}>
         <Text>{copyPostsData.length} results</Text>
 
         <Button variant={"link"} colorScheme="orange" onClick={sortByDate}>
-         {sort ? 'Reset to Deafult' : 'Sort by Date'}
+          {sort ? "Reset to Deafult" : "Sort by Date"}
         </Button>
       </Flex>
       <Grid templateColumns="repeat(5, 1fr)" gap={4}>
@@ -501,8 +499,10 @@ const ArticleList: React.FC<ArticleListProps> = ({ PostsData }) => {
             <Center w="full">
               <Button onClick={handleDisableClick}>Disable ON / OFF</Button>
               <Select w={40} ml={3} onChange={handlePageSizeChange}>
-                <option value="50" defaultValue={50}>50</option>
-                <option value="25" >25</option>
+                <option value="50" defaultValue={50}>
+                  50
+                </option>
+                <option value="25">25</option>
                 <option value="10">10</option>
               </Select>
             </Center>

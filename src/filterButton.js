@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ButtonGroup, IconButton } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const FilterButton = ({ text, ...props }) => {
