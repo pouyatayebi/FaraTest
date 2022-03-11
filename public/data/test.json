@@ -1,0 +1,43 @@
+{
+  "links": [
+    {
+      "source": "Marvel",
+      "target": "Heroes"
+    },
+    {
+      "source": "Marvel",
+      "target": "Villains"
+    },
+    {
+      "source": "Marvel",
+      "target": "Teams"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "Marvel",
+      "size": 500,
+      "fontSize": 18
+    },
+    {
+      "id": "Villains",
+      "size": 500,
+      "fontSize": 18
+    },
+    {
+      "id": "Teams",
+      "size": 500,
+      "fontSize": 18
+    },
+    {
+      "id": "Heroes",
+      "size": 500,
+      "fontSize": 18
+    },
+    {
+      "id": "pouya",
+      "size": 500,
+      "fontSize": 18
+    }
+  ]
+}
